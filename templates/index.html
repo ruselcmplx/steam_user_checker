@@ -5,12 +5,16 @@
   </head>
   <body>
     <div style="display: flex; flex-direction: row;">
+      {% if avatar_src %}
       <div style="margin-right: 4px;">
         <img style="border-radius: 6px;" width="40px" height="40px" src="{{ avatar_src }}" alt="">
       </div>
+      {% endif %}
+      {% if name %}
       <div style="margin-right: 4px;">
         {{ name }}
       </div>
+      {% endif %}
       <div style="margin-right: 4px;">
         {{ message }}
       </div>
