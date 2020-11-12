@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask App</title>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: row;">
+      <div style="margin-right: 4px;">
+        <img style="border-radius: 6px;" width="40px" height="40px" src="{{ avatar_src }}" alt="">
+      </div>
+      <div style="margin-right: 4px;">
+        {{ name }}
+      </div>
+      <div style="margin-right: 4px;">
+        {{ message }}
+      </div>
+    </div>
+
+    <div>
+      <form method="POST">
+        <input type="text" name="name" />
+        <input type="submit" value="Проверить">
+      </form>
+    </div>
+  </body>
+</html>
